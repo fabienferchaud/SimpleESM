@@ -1,4 +1,4 @@
-### Calculation of SOC (and N) stocks at fixed depth (FD) and Equivalent Soil Mass (ESM) ###
+### Calculation of SOC (and N) stocks, in t/ha, at fixed depth (FD) and Equivalent Soil Mass (ESM) ###
 
 # Authors: Fabien FERCHAUD and Florent CHLEBOWSKI
 # Contact: Fabien FERCHAUD (INRAE) - fabien.ferchaud@inrae.fr
