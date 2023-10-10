@@ -1,4 +1,4 @@
-### Calculation of SOC (and N) stocks at fixed depth (FD) and Equivalent Soil Mass (ESM) ###
+### Calculation of SOC (and N) stocks, in t/ha, at fixed depth (FD) and Equivalent Soil Mass (ESM) ###
 
 # Authors: Fabien FERCHAUD and Florent CHLEBOWSKI
 # Contact: Fabien FERCHAUD (INRAE) - fabien.ferchaud@inrae.fr
@@ -472,7 +472,7 @@ SimpleESM <- function(input_file_name, output_directory_name, RefM_option, E_cal
     # for BD data
 
     BD <- BD %>%
-      mutate(Soil_mass = (Lower - Upper) * BD_g_cm3 * 10) %>%
+      mutate(Soil_mass = (Lower - Upper) * BD_g_cm3 * 10) %>% # soil mass in t/ha
       group_by(Campaign, Plot, Point) %>%
       mutate(Soil_mass_cum = cumsum(Soil_mass)) %>%
       ungroup()
@@ -585,8 +585,8 @@ SimpleESM <- function(input_file_name, output_directory_name, RefM_option, E_cal
 
     if (E_calc_option == "SOC_and_N") {
       Stock <- dplyr::select(Conc, Upper_cm:Point_ID, SOC_g_kg:Soil_mass) %>%
-        mutate(SOC_stock_FD = Soil_mass * SOC_g_kg /1000) %>%
-        mutate(N_stock_FD = Soil_mass * N_g_kg /1000) %>%
+        mutate(SOC_stock_FD = Soil_mass * SOC_g_kg /1000) %>% # SOC stock in t/ha
+        mutate(N_stock_FD = Soil_mass * N_g_kg /1000) %>% # N stock in t/ha
         group_by(Point_ID) %>%
         mutate(SOC_stock_cum_FD = cumsum(SOC_stock_FD)) %>%
         mutate(N_stock_cum_FD = cumsum(N_stock_FD)) %>%
