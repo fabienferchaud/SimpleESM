@@ -1,0 +1,99 @@
+File;Variable;Definition;Type;Unit
+"input file (""Concentrations"" sheet)";Campaign;ID of the sampling campaign;character;
+"input file (""Concentrations"" sheet)";Treatment;ID of the experimental treatment;character;
+"input file (""Concentrations"" sheet)";Block;ID of the experimental block;character;
+"input file (""Concentrations"" sheet)";Plot;ID of the sampled plot;character;
+"input file (""Concentrations"" sheet)";Point;ID of the sampled point;character;
+"input file (""Concentrations"" sheet)";Upper_cm;upper depth of the soil sample;numeric (negative value);cm
+"input file (""Concentrations"" sheet)";Lower_cm;lower depth of the soil sample;numeric (negative value);cm
+"input file (""Concentrations"" sheet)";SOC_g_kg;measured soil organic carbon concentration;numeric;g kg-1
+"input file (""Concentrations"" sheet)";N_g_kg;measured soil nitrogen concentration;numeric;g kg-1
+"input file (""Concentrations"" sheet)";d13C_per1000;measured soil organic carbon delta 13C;numeric;‰
+"input file (""Concentrations"" sheet)";d15N_per1000;measured soil nitrogen delta 15N;numeric;‰
+"input file (""BD"" sheet)";Campaign;ID of the sampling campaign;character;
+"input file (""BD"" sheet)";Treatment;ID of the experimental treatment;character;
+"input file (""BD"" sheet)";Block;ID of the experimental block;character;
+"input file (""BD"" sheet)";Plot;ID of the sampled plot;character;
+"input file (""BD"" sheet)";Point;ID of the sampled point;character;
+"input file (""BD"" sheet)";Upper_cm;upper depth of the soil sample;numeric (negative value);cm
+"input file (""BD"" sheet)";Lower_cm;lower depth of the soil sample;numeric (negative value);cm
+"input file (""BD"" sheet)";BD_g_cm3;soil bulk density (fine soil dry mass per unit of total soil volume);numeric;g cm-3
+"input file (""Ref_soil_mass"" sheet)";Layer;layer number from 1 to n;integer;
+"input file (""Ref_soil_mass"" sheet)";Upper_cm;upper depth of the soil layer in the reference situation ;numeric (negative value);cm
+"input file (""Ref_soil_mass"" sheet)";Lower_cm;lower depth of the soil layer in the reference situation;numeric (negative value);cm
+"input file (""Ref_soil_mass"" sheet)";Ref_soil_mass_t_ha;reference dry soil mass of the layer;numeric;t ha-1
+Output_FD.csv;Campaign;ID of the sampling campaign;character;
+Output_FD.csv;Treatment;ID of the experimental treatment;character;
+Output_FD.csv;Block;ID of the experimental block;character;
+Output_FD.csv;Plot;ID of the sampled plot;character;
+Output_FD.csv;Point;ID of the sampled point;character;
+Output_FD.csv;Layer;layer number from 1 to n;integer;
+Output_FD.csv;Upper_cm;upper depth of the soil sample;numeric (negative value);cm
+Output_FD.csv;Lower_cm;lower depth of the soil sample;numeric (negative value);cm
+Output_FD.csv;Upper;upper depth of the soil sample;numeric;mm
+Output_FD.csv;Lower;lower depth of the soil sample;numeric;mm
+Output_FD.csv;Point_ID;Unique ID of the sampled point (combine Campaign, Plot and Point);character;
+Output_FD.csv;Soil_mass_cum;Cumulative soil mass;numeric;t ha-1
+Output_FD.csv;SOC_stock_cum_FD;Cumulative soil organic carbon stock at fixed depth;numeric;t ha-1
+Output_FD.csv;N_stock_cum_FD;Cumulative soil nitrogen stock at fixed depth;numeric;t ha-1
+Output_FD.csv;C_N_ratio_cum_FD;Cumulative soil C:N ratio at fixed depth;numeric;g g-1
+Output_FD.csv;d13C_per1000_cum_FD;Cumulative soil organic carbon delta 13C at fixed depth;numeric;‰
+Output_FD.csv;d15N_per1000_cum_FD;Cumulative soil nitrogen delta 15N at fixed depth;numeric;‰
+Output_FD.csv;Soil_mass;Soil mass of the layer;numeric;t ha-1
+Output_FD.csv;SOC_stock_FD;Soil organic carbon stock of the layer at fixed depth;numeric;t ha-1
+Output_FD.csv;N_stock_FD;Soil nitrogen stock of the layer at fixed depth;numeric;t ha-1
+Output_FD.csv;SOC_g_kg;Soil organic carbon concentration of the layer at fixed depth;numeric;g kg-1
+Output_FD.csv;N_g_kg;Soil nitrogen concentration of the layer at fixed depth;numeric;g kg-1
+Output_FD.csv;C_N_ratio_FD;C:N ratio of the layer at fixed depth;numeric;g g-1
+Output_FD.csv;d13C_per1000;Soil organic carbon delta 13C of the layer at fixed depth;numeric;‰
+Output_FD.csv;d15N_per1000;Soil nitrogen delta 15N of the layer at fixed depth;numeric;‰
+Output_ESM.csv;Campaign;ID of the sampling campaign;character;
+Output_ESM.csv;Treatment;ID of the experimental treatment;character;
+Output_ESM.csv;Block;ID of the experimental block;character;
+Output_ESM.csv;Plot;ID of the sampled plot;character;
+Output_ESM.csv;Point;ID of the sampled point;character;
+Output_ESM.csv;Layer;layer number from 1 to n;integer;
+Output_ESM.csv;Upper_cm;Upper depth of the soil layer at equivalent soil mass (method 1);numeric (negative value);cm
+Output_ESM.csv;Lower_cm;Lower depth of the soil layer at equivalent soil mass (method 1);numeric (negative value);cm
+Output_ESM.csv;Upper;Upper depth of the soil layer at equivalent soil mass (method 1);numeric;mm
+Output_ESM.csv;Lower;Lower depth of the soil layer at equivalent soil mass (method 1);numeric;mm
+Output_ESM.csv;Point_ID;Unique ID of the sampled point (combine Campaign, Plot and Point);character;
+Output_ESM.csv;Soil_mass_cum_ESM;Cumulative soil mass at equivalent soil mass (method 1);numeric;t ha-1
+Output_ESM.csv;SOC_stock_cum_ESM;Cumulative soil organic carbon stock at equivalent soil mass (method 1);numeric;t ha-1
+Output_ESM.csv;N_stock_cum_ESM;Cumulative soil nitrogen stock at equivalent soil mass (method 1);numeric;t ha-1
+Output_ESM.csv;C_N_ratio_cum_ESM;Cumulative soil C:N ratio at equivalent soil mass (method 1);numeric;g g-1
+Output_ESM.csv;d13C_per1000_cum_ESM;Cumulative soil organic carbon delta 13C at equivalent soil mass (method 1);numeric;‰
+Output_ESM.csv;d15N_per1000_cum_ESM;Cumulative soil nitrogen delta 15N at equivalent soil mass (method 1);numeric;‰
+Output_ESM.csv;Soil_mass_ESM;Soil mass of the layer;numeric;t ha-1
+Output_ESM.csv;SOC_stock_ESM;Soil organic carbon stock of the layer at equivalent soil mass (method 1);numeric;t ha-1
+Output_ESM.csv;N_stock_ESM;Soil nitrogen stock of the layer at equivalent soil mass (method 1);numeric;t ha-1
+Output_ESM.csv;SOC_g_kg_ESM;Soil organic carbon concentration of the layer at equivalent soil mass (method 1);numeric;g kg-1
+Output_ESM.csv;N_g_kg_ESM;Soil nitrogen concentration of the layer at equivalent soil mass (method 1);numeric;g kg-1
+Output_ESM.csv;C_N_ratio_ESM;C:N ratio of the layer at equivalent soil mass (method 1);numeric;g g-1
+Output_ESM.csv;d13C_per1000_ESM;Soil organic carbon delta 13C of the layer at equivalent soil mass (method 1);numeric;‰
+Output_ESM.csv;d15N_per1000_ESM;Soil nitrogen delta 15N of the layer at equivalent soil mass (method 1);numeric;‰
+Output_ESM2.csv;Campaign;ID of the sampling campaign;character;
+Output_ESM2.csv;Treatment;ID of the experimental treatment;character;
+Output_ESM2.csv;Block;ID of the experimental block;character;
+Output_ESM2.csv;Plot;ID of the sampled plot;character;
+Output_ESM2.csv;Point;ID of the sampled point;character;
+Output_ESM2.csv;Layer;layer number from 1 to n;integer;
+Output_ESM2.csv;Upper_cm;Upper depth of the soil layer at equivalent soil mass (method 2);numeric (negative value);cm
+Output_ESM2.csv;Lower_cm;Lower depth of the soil layer at equivalent soil mass (method 2);numeric (negative value);cm
+Output_ESM2.csv;Upper;Upper depth of the soil layer at equivalent soil mass (method 2);numeric;mm
+Output_ESM2.csv;Lower;Lower depth of the soil layer at equivalent soil mass (method 2);numeric;mm
+Output_ESM2.csv;Point_ID;Unique ID of the sampled point (combine Campaign, Plot and Point);character;
+Output_ESM2.csv;Soil_mass_cum_ESM2;Cumulative soil mass at equivalent soil mass (method 2);numeric;t ha-1
+Output_ESM2.csv;SOC_stock_cum_ESM2;Cumulative soil organic carbon stock at equivalent soil mass (method 2);numeric;t ha-1
+Output_ESM2.csv;N_stock_cum_ESM2;Cumulative soil nitrogen stock at equivalent soil mass (method 2);numeric;t ha-1
+Output_ESM2.csv;C_N_ratio_cum_ESM2;Cumulative soil C:N ratio at equivalent soil mass (method 2);numeric;g g-1
+Output_ESM2.csv;d13C_per1000_cum_ESM2;Cumulative soil organic carbon delta 13C at equivalent soil mass (method 2);numeric;‰
+Output_ESM2.csv;d15N_per1000_cum_ESM2;Cumulative soil nitrogen delta 15N at equivalent soil mass (method 2);numeric;‰
+Output_ESM2.csv;Soil_mass_ESM2;Soil mass of the layer;numeric;t ha-1
+Output_ESM2.csv;SOC_stock_ESM2;Soil organic carbon stock of the layer at equivalent soil mass (method 2);numeric;t ha-1
+Output_ESM2.csv;N_stock_ESM2;Soil nitrogen stock of the layer at equivalent soil mass (method 2);numeric;t ha-1
+Output_ESM2.csv;SOC_g_kg_ESM2;Soil organic carbon concentration of the layer at equivalent soil mass (method 2);numeric;g kg-1
+Output_ESM2.csv;N_g_kg_ESM2;Soil nitrogen concentration of the layer at equivalent soil mass (method 2);numeric;g kg-1
+Output_ESM2.csv;C_N_ratio_ESM2;C:N ratio of the layer at equivalent soil mass (method 2);numeric;g g-1
+Output_ESM2.csv;d13C_per1000_ESM2;Soil organic carbon delta 13C of the layer at equivalent soil mass (method 2);numeric;‰
+Output_ESM2.csv;d15N_per1000_ESM2;Soil nitrogen delta 15N of the layer at equivalent soil mass (method 2);numeric;‰
